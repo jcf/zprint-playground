@@ -1,0 +1,13 @@
+#+title: zprint playground
+
+Poking and prodding at zprint to automate the process of formatting Clojure
+code. Not out of fastidiousness but because it's tedious work that wears down
+people's hands. We should delegate such work to prolong our health.
+
+#+begin_src sh :results output verbatim :exports results
+ls -1 cases
+#+end_src
+
+#+results:
+: defn
+: kaocha

@@ -1,0 +1,3 @@
+;; FIXME There should not be a single space before the map of Kaocha options.
+#kaocha/v1
+ {:plugins [:kaocha.plugin/randomize]}

@@ -1,0 +1,10 @@
+;; https://github.com/kkinnear/zprint/blob/ce5a1caf676b00f2b754e35151042211fbcc57f8/doc/reference.md
+{:list  {:indent-arg 1}
+ :map   {:comma?        false
+         :indent        0
+         :key-order     [:keys :as :or]
+         :sort-in-code? true
+         :sort?         true}
+ :set   {:sort-in-code? true :sort? true}
+ :style [:community :how-to-ns :justified-original]
+ :width 80}

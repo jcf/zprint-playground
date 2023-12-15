@@ -1,0 +1,21 @@
+{:paths ["resources" "src"]
+ :deps
+ {babashka/fs         {:mvn/version "0.4.19"}
+  org.clojure/clojure {:mvn/version "1.11.1"}
+  zprint/zprint       {:mvn/version "1.2.8"}}
+
+ :aliases
+ {:dev
+  {:extra-paths ["dev" "dev-resources"]
+   :extra-deps
+   {org.clojure/test.check      {:mvn/version "1.1.1"}
+    org.clojure/tools.namespace {:mvn/version "1.4.4"}}}
+
+  :test
+  {:extra-paths ["test" "test-resources"]
+   :extra-deps
+   {nubank/matcher-combinators {:mvn/version "3.8.8"}}}
+
+  :runner
+  {:extra-deps {lambdaisland/kaocha {:mvn/version "1.87.1366"}}
+   :main-opts  ["-m" "kaocha.runner"]}}}
