@@ -4,10 +4,25 @@ Poking and prodding at zprint to automate the process of formatting Clojure
 code. Not out of fastidiousness but because it's tedious work that wears down
 people's hands. We should delegate such work to prolong our health.
 
+* Inventory
+We have the following cases to provide examples of how you can format your code
+in a particular way.
+
 #+begin_src sh :results output verbatim :exports results
 ls -1 cases
 #+end_src
 
 #+results:
 : defn
+: how-to-ns
 : kaocha
+
+* Adding test cases
+1. Create a new directory within =cases=
+2. Add your =in.clj=, =out.clj= and =.zprint.edn= files
+3. Run the test suite via your favourite REPL or using =bin/test=
+4. Create a commit using imperative mood (e.g. "Add" rather than "Adding" or "Adds")
+5. Open a pull request
+
+In future, failing tests will be acceptable when creating a pull request
+documenting an issue, but we won't merge them to the =main= branch.
